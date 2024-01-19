@@ -28,6 +28,11 @@ img {
     max-width: 100%;
 }
 
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
 .main_title {
     color: #000;
     font-family: "TT Firs Neue",sans-serif;
@@ -35,6 +40,78 @@ img {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-bottom: 50px;
+}
+
+.main_btn_white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    width: 244px;
+    height: 41px;
+    border: 1px solid white;
+    color: #FFF;
+    font-family: "TT Firs Neue",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @include transition();
+
+    svg {
+        path {
+            @include transition();
+        }
+    }
+
+    &:hover {
+        background-color: white;
+        color: #000;
+
+        svg {
+            path {
+                fill: #000;
+            }
+        }
+    }
+}
+
+.main_btn_black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 190px;
+    height: 41px;
+    border: 1px solid transparent;
+    background-color: #000;
+    color: #FFF;
+    font-family: "TT Firs Neue",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @include transition();
+
+    svg {
+        path {
+            @include transition();
+        }
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: #000;
+        border: 1px solid #000;
+
+        svg {
+            path {
+                fill: #000;
+            }
+        }
+    }
 }
 
 // home_section
@@ -165,41 +242,6 @@ header {
         text-transform: uppercase;
         margin-bottom: 26px;
     }
-
-    button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin: 0 auto;
-        width: 244px;
-        height: 41px;
-        border: 1px solid white;
-        color: #FFF;
-        font-family: "TT Firs Neue",sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        @include transition();
-
-        svg {
-            path {
-                @include transition();
-            }
-        }
-
-        &:hover {
-            background-color: white;
-            color: #000;
-
-            svg {
-                path {
-                    fill: #000;
-                }
-            }
-        }
-    }
 }
 
 .home_down {
@@ -233,8 +275,194 @@ header {
 // live_time
 .live_time {
     padding: 200px 0;
+
+    .live_time_in {
+        display: flex;
+        align-items: center;
+        gap: 150px;
+        
+        .live_time_left {
+            img {
+                max-width: 630px;
+            }
+        }
+
+        .live_time_right {
+            .live_time_right_in {
+                max-width: 630px;
+            }
+
+            p {
+                color: #000;
+                font-family: "TT Firs Neue",sans-serif;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .live_time_text {
+                margin-bottom: 45px;
+            }
+
+            .live_time_btns {
+                margin-top: 50px;
+                display: flex;
+                justify-content: start;
+                gap: 26px;
+
+                .main_btn_white {
+                    margin: 0;
+                    color: #000;
+                    border: 1px solid #000;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: #000;
+                        border: transparent;
+
+                        svg {
+                            path {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 // live_time
+
+// contact
+.contact {
+    
+    .contact_wrapper {
+        padding: 250px 0 315px 0;
+        position: relative;
+        max-width: 1920px;
+        margin: 0 auto;
+
+    }
+
+    .contact_img {
+        position: absolute;
+        right: 0;
+        top: -130px;
+    }
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+
+        .main_title {
+            max-width: 374px;
+            margin-bottom: 50px;
+        }
+
+        .contact_input {
+            margin-bottom: 25px;
+            max-width: 339px;
+            border: none;
+            border-bottom: 1px solid #181D24;
+            color: var(--, #4F4F4F);
+            font-family: "TT Firs Neue",sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 104%;
+            text-transform: uppercase;
+            padding-bottom: 22px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .contact_checkbox {
+            user-select: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 25px;
+            margin-bottom: 30px;
+
+            input[type="checkbox"] {
+                width: 20px;
+                height: 20px;
+                background: black;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                border: none;
+                outline: none;
+                position: relative;
+                left: 0px;
+                top: 0px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            input[type='checkbox']:checked:before{
+                content:'\2713'; 
+                background:black; 
+                width:100%; 
+                height:100%; 
+                top:0;
+                left:0;
+                border-radius: 5px;
+                display:flex; 
+                align-items:center; 
+                justify-content:center; 
+                color:white; 
+                font-weight:bold; 
+            }
+
+            label {
+                cursor: pointer;
+                color: var(---, #181D24);
+                font-family: "TT Firs Neue",sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 110%;
+                text-transform: capitalize;
+
+                a {
+                    text-decoration-line: underline;
+                    text-transform: lowercase;
+                }
+            }
+        }
+    }
+}
+// contact
+
+// location
+.location {
+    margin-bottom: 200px;
+    .location_img {
+        position: relative;
+
+        .location_text {
+            max-width: 730px;
+            position: absolute;
+            top: -21%;
+            right: 79px;
+            padding: 50px;
+            background-color: #fff;
+
+            p {
+                color: #000;
+                font-family: "TT Firs Neue",sans-serif;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
+// location
 
 
 
