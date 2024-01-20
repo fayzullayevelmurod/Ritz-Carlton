@@ -333,20 +333,6 @@ header .header_right a {
 header .header_right a:hover {
   opacity: 0.7;
 }
-header .header_right button {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: #FFF;
-  font-family: "TT Firs Neue", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  background-color: transparent;
-  border: none;
-}
 
 header.sticky {
   padding: 10px 0;
@@ -595,7 +581,7 @@ footer .footer_bottom p {
 footer .main_container {
   display: flex;
   align-items: start;
-  justify-content: end;
+  justify-content: center;
   gap: 155px;
 }
 footer .footer_form {
