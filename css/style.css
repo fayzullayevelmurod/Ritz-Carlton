@@ -11,6 +11,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body[data-aos-duration="2500"] [data-aos],
+[data-aos][data-aos][data-aos-duration="2500"] {
+  transition-duration: 2500ms;
+}
+
 .main_container {
   max-width: 1580px;
   padding: 0 20px;

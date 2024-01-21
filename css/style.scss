@@ -10,6 +10,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body[data-aos-duration='2500'] [data-aos],
+[data-aos][data-aos][data-aos-duration='2500'] {
+  transition-duration: 2500ms;
+}
+
 @mixin transition {
     transition: .3s ease;
 }
