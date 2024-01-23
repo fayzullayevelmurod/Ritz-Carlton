@@ -17,7 +17,7 @@
     <!-- css file -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="hidden">
     <!-- Preloader -->
 	<section>
 		<div id="preloader">
@@ -72,6 +72,37 @@
 
     <div class="wrapper">
 
+        <!-- media_menu -->
+        <div class="media_menu">
+            <div class="main_container">
+                <nav>
+                    <ul class="nav_link">
+                        <li class="nav_item">
+                            <a href="#">
+                                О проекте
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                Удобства
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                Расположение
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- media_menu -->
+
         <!-- home -->
         <section class="home_section">
             <div class="home_section_bg"></div>
@@ -107,9 +138,17 @@
                         </nav>
                     </div>
                     <div class="header_right">
-                        <a href="tel:+35794204812">
+                        <a class="desktop_phone" href="tel:+35794204812">
                             +357 94 204812
                         </a>
+                        <a class="media_phone" href="tel:+35794204812">
+                            <img src="./images/mobie_phone.svg" alt="">
+                        </a>
+                        <div class="hamburger" id="hamburger-1">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -268,7 +307,7 @@
 
         <!-- footer -->
         <footer data-aos="fade-up"
-        data-aos-duration="2000" data-aos-duration="2500">
+         data-aos-duration="2500">
             <div class="footer_top">
                 <div class="main_container">
                     <!-- <div class="footer_top_left">

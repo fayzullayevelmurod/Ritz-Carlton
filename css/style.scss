@@ -272,6 +272,10 @@ img {
 		width: 8em;
 	}
 
+    .ctn-preloader .animation-preloader .txt-loading .letters-loading {
+        font-size: 30px;
+    }
+
 	/* Texto cargando */
 	.ctn-preloader .animation-preloader .txt-loading {
 	  font: bold 3.5em 'Montserrat', sans-serif;
@@ -292,8 +296,39 @@ img {
 	}
 }
 
+.media_menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    z-index: 4;
+    @include transition();
+    background-color: #fff;
+    .nav_link {
+        margin-top: 150px;
+    }
+    .nav_item {
+        margin-bottom: 20px;
+        a {
+            color: #000;
+            font-family: "TT Firs Neue",sans-serif;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            @include transition();
 
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
 
+.media_menu.active {
+    left: 0;
+}
 
 // home_section
 .home_section {
@@ -381,8 +416,12 @@ header {
 header.sticky {
     padding: 10px 0;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
+}
+
+header.active {
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .home {

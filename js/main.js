@@ -21,9 +21,19 @@ setTimeout(function() {
         AOS.init();
     });
     }
-}, 2000);
+}, 2500);
 
 });
+
+
+$(document).ready(function(){
+    $(".hamburger").click(function(){
+      $(this).toggleClass("is-active");
+      $(".media_menu").toggleClass("active")
+      $("header").toggleClass("active")
+    });
+});
+
 
 
 // AOS.init();
