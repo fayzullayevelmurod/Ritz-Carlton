@@ -142,6 +142,15 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    .main_btn_black {
+        width: 244px;
+    }
+
+    body[data-aos-duration='1500'] [data-aos],
+    [data-aos][data-aos][data-aos-duration='1500'] {
+        transition-duration: 1500ms;
+    }
     p {
         font-size: 20px !important;
     }
@@ -164,6 +173,7 @@
                 }
                 .live_time_btns {
                     flex-direction: column;
+                    align-items: center;
                     gap: 20px;
                 }
             }
@@ -188,7 +198,10 @@
             font-size: 22px;
         }
 
-        .home_down  {
+    }
+    
+    .home_section {        
+        .home_down {
             img {
                 width: 35px;
             }
@@ -200,6 +213,7 @@
         .main_btn_white {
             margin: 0;
         }
+
         .footer_top_right {
             .footer_top_right_in {
                 flex-direction: column;
@@ -211,7 +225,10 @@
         }
 
         .footer_top_right_two {
-            flex-direction: column-reverse;
+            flex-direction: column-reverse; 
+            p {
+                font-size: 14px !important;
+            }
 
             .footer_top_right_two_right {
                 margin-top: 0;
@@ -221,6 +238,10 @@
         .footer_bottom  {
             .main_container {
                 padding: 0 20px;
+
+                p {
+                    font-size: 10px !important;
+                }
             }
         }
     }
