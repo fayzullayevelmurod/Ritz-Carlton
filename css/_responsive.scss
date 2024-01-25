@@ -147,6 +147,10 @@
         width: 244px;
     }
 
+    .ctn-preloader .animation-preloader .txt-loading .letters-loading {
+        font-size: 25px;
+    }
+
     body[data-aos-duration='1500'] [data-aos],
     [data-aos][data-aos][data-aos-duration='1500'] {
         transition-duration: 1500ms;
@@ -244,5 +248,11 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .ctn-preloader .animation-preloader .txt-loading .letters-loading {
+        font-size: 22px;
     }
 }

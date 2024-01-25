@@ -487,6 +487,14 @@ header.active {
   fill: #fff;
 }
 
+.live_three {
+  padding: 0 0 200px 0;
+}
+
+.live_time .live_time_three {
+  flex-direction: row-reverse;
+  justify-content: start;
+}
 .contact .contact_wrapper {
   padding: 150px 0 115px 0;
   position: relative;
@@ -902,6 +910,9 @@ footer .footer_top_right_two p {
   .main_btn_black {
     width: 244px;
   }
+  .ctn-preloader .animation-preloader .txt-loading .letters-loading {
+    font-size: 25px;
+  }
   body[data-aos-duration="1500"] [data-aos],
   [data-aos][data-aos][data-aos-duration="1500"] {
     transition-duration: 1500ms;
@@ -959,5 +970,10 @@ footer .footer_top_right_two p {
   }
   footer .footer_bottom .main_container p {
     font-size: 10px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .ctn-preloader .animation-preloader .txt-loading .letters-loading {
+    font-size: 22px;
   }
 }/*# sourceMappingURL=style.css.map */

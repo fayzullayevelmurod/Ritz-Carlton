@@ -544,6 +544,24 @@ header.active {
         }
     }
 }
+
+.live_three {
+    padding: 0 0 200px 0;
+}
+
+.live_time {
+    .live_time_three {
+        flex-direction: row-reverse;
+        justify-content: start;
+    
+        .live_time_right {
+            // .live_time_right_in {
+            //     max-width: 100%;
+            //     width: 100%;
+            // }
+        }
+    }
+}
 // live_time
 
 // contact
