@@ -140,6 +140,26 @@ img {
   z-index: 900;
 }
 
+.modal_two {
+    max-width: 1288px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: 9;
+    background: rgb(66, 70, 65);
+    display: flex;
+    
+
+    .modal_close {
+        position: absolute;
+        cursor: pointer;
+        top: 30px;
+        right: 30px;
+    }
+}
+
 .ctn-preloader .animation-preloader {
 	position: absolute;
   z-index: 100;
@@ -433,6 +453,14 @@ header.active {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .home_text {
+        font-size: 60px;
+    }
+
+    .home_text_under {
+        font-size: 30px;
     }
 
     h1 {

@@ -122,6 +122,24 @@ img {
   z-index: 900;
 }
 
+.modal_two {
+  max-width: 1288px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  z-index: 9;
+  background: rgb(66, 70, 65);
+  display: flex;
+}
+.modal_two .modal_close {
+  position: absolute;
+  cursor: pointer;
+  top: 30px;
+  right: 30px;
+}
+
 .ctn-preloader .animation-preloader {
   position: absolute;
   z-index: 100;
@@ -396,6 +414,12 @@ header.active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.home .home_text {
+  font-size: 60px;
+}
+.home .home_text_under {
+  font-size: 30px;
 }
 .home h1 {
   color: #FFF;
@@ -937,6 +961,12 @@ footer .footer_top_right_two p {
   }
   .location .location_img .location_text {
     padding: 20px;
+  }
+  .home .home_text {
+    font-size: 40px;
+  }
+  .home .home_text_under {
+    font-size: 20px;
   }
   .home h1 {
     font-size: 50px;
