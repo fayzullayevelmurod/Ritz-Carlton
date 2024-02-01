@@ -71,7 +71,7 @@
 }
 
 @media only screen and (max-width: 1300px) {
-    .modal_two {
+    .modal {
         width: 900px;
 
         .modal_content {
@@ -99,6 +99,15 @@
             }
         }
     }
+
+    .modal_one {
+        .modal_img {
+            img {
+                width: 800px;
+            }
+        }
+    }
+
     .modal_three {
         width: 900px;
 
@@ -199,7 +208,7 @@
         }
     }
 
-    .modal_two {
+    .modal {
         width: 400px;
 
         .modal_content {
@@ -211,6 +220,20 @@
             }
         }
     }
+
+    .modal_one {
+        .modal_content {
+            ul {
+                width: 100%;
+                flex-direction: column;
+
+                li {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     .modal_three {
         width: 400px;
 

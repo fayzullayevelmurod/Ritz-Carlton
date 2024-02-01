@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 let live_btn = document.querySelector('.live_btn');
 let modal_two = document.querySelector('.modal_two');
-let modal_close = document.querySelector('.modal_close');
+let modal_close = document.querySelector('.modal_close2');
 
 live_btn.addEventListener('click', () => {
     modal_two.classList.add('active');
@@ -60,6 +60,16 @@ modal_close2.addEventListener('click', () => {
 })
 
 
+
+// console.log($('.modal_one'));
+
+$('.open_modal_1').click(function () {
+    $('.modal_one').addClass('active')
+})
+
+$('.modal_close1').click(function () {
+    $('.modal_one').removeClass('active')
+})
 
 // AOS.init();
 

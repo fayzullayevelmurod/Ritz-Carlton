@@ -140,7 +140,7 @@ img {
   z-index: 900;
 }
 
-.modal_two {
+.modal {
     width: 1288px;
     overflow: hidden;
     position: fixed;
@@ -300,6 +300,39 @@ img {
                         right: 0;
                     }
                 }
+            }
+        }
+    }
+}
+
+.modal_one {
+    overflow: visible;
+
+    .modal_img {
+        position: absolute;
+        right: -275px;
+        bottom: -250px;
+        left: auto;
+        top: auto;
+
+        img {
+            width: 1100px;
+            height: auto;
+        }
+    }
+
+    .modal_content {
+        ul {
+            width: 558px;
+            display: flex;
+            gap: 10px 64px;
+            flex-wrap: wrap;
+            flex-direction: inherit;
+
+            li {
+                width: calc(50% - 32px);
+                flex-shrink: 0;
+                white-space: nowrap;
             }
         }
     }
@@ -475,7 +508,7 @@ img {
     display: flex;
 }
 
-.modal_two.active {
+.modal.active {
     display: flex;
 }
 
