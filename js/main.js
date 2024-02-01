@@ -71,6 +71,14 @@ $('.modal_close1').click(function () {
     $('.modal_one').removeClass('active')
 })
 
+$('.open_modal_2').click(function () {
+    $('.modal_two').addClass('active')
+})
+
+$('.modal_close2').click(function () {
+    $('.modal_two').removeClass('active')
+})
+
 // AOS.init();
 
 

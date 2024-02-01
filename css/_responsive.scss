@@ -215,9 +215,7 @@
             padding: 40px 35px;
         }
         .modal_img {
-            img {
-                display: none;
-            }
+            display: none;
         }
     }
 
@@ -241,9 +239,7 @@
             padding: 40px 35px;
         }
         .modal_img {
-            img {
-                display: none;
-            }
+            display: none;
         }
     }
 }
@@ -293,6 +289,10 @@
 
     .location {
         .location_img {
+            img {
+                height: auto;
+            }
+
             .location_text {
                 padding: 20px;
             }
