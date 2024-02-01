@@ -35,6 +35,31 @@ $(document).ready(function(){
 });
 
 
+let live_btn = document.querySelector('.live_btn');
+let modal_two = document.querySelector('.modal_two');
+let modal_close = document.querySelector('.modal_close');
+
+live_btn.addEventListener('click', () => {
+    modal_two.classList.add('active');
+});
+
+modal_close.addEventListener('click', () => {
+    modal_two.classList.remove('active');
+})
+
+let live_btn_three = document.querySelector('.live_btn_three');
+let modal_three = document.querySelector('.modal_three');
+let modal_close2 = document.querySelector('.modal_close2');
+
+live_btn_three.addEventListener('click', () => {
+    modal_three.classList.add('active');
+});
+
+modal_close2.addEventListener('click', () => {
+    modal_three.classList.remove('active');
+})
+
+
 
 // AOS.init();
 

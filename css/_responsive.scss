@@ -70,6 +70,65 @@
     }
 }
 
+@media only screen and (max-width: 1300px) {
+    .modal_two {
+        width: 900px;
+
+        .modal_content {
+            padding: 50px;
+
+            h3 {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 35px;
+                letter-spacing: 0%;
+                text-align: center;
+                margin-bottom: 27px;
+            }
+
+            ul {
+                margin-bottom: 30px;
+                li {
+                    color: rgb(255, 255, 255);
+                    font-size: 24px;
+                    font-weight: 300;
+                    line-height: 28px;
+                    letter-spacing: 10%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .modal_three {
+        width: 900px;
+
+        .modal_content {
+            padding: 50px;
+
+            h3 {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 35px;
+                letter-spacing: 0%;
+                text-align: center;
+                margin-bottom: 27px;
+            }
+
+            ul {
+                margin-bottom: 30px;
+                li {
+                    color: rgb(255, 255, 255);
+                    font-size: 24px;
+                    font-weight: 300;
+                    line-height: 28px;
+                    letter-spacing: 10%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 993px) {
     header {
         #hamburger-1 {
@@ -136,6 +195,31 @@
         .footer_top_right {
             .footer_top_right_in {
                 gap: 30px;
+            }
+        }
+    }
+
+    .modal_two {
+        width: 400px;
+
+        .modal_content {
+            padding: 40px 35px;
+        }
+        .modal_img {
+            img {
+                display: none;
+            }
+        }
+    }
+    .modal_three {
+        width: 400px;
+
+        .modal_content {
+            padding: 40px 35px;
+        }
+        .modal_img {
+            img {
+                display: none;
             }
         }
     }
