@@ -49,7 +49,7 @@ modal_close.addEventListener('click', () => {
 
 let live_btn_three = document.querySelector('.live_btn_three');
 let modal_three = document.querySelector('.modal_three');
-let modal_close2 = document.querySelector('.modal_close2');
+let modal_close2 = document.querySelector('.modal_close3');
 
 live_btn_three.addEventListener('click', () => {
     modal_three.classList.add('active');

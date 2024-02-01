@@ -371,3 +371,21 @@
         font-size: 22px;
     }
 }
+
+@media only screen and (max-width: 440px) {
+    .modal, .modal_three {
+        width: calc(100% - 40px);
+
+        .modal_content {
+            width: 100%;
+
+            .modal_form {
+                width: 100%;
+
+                .modal_btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

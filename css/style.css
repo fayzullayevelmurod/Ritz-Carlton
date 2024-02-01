@@ -1395,4 +1395,18 @@ footer .footer_top_right_two p {
   .ctn-preloader .animation-preloader .txt-loading .letters-loading {
     font-size: 22px;
   }
+}
+@media only screen and (max-width: 440px) {
+  .modal, .modal_three {
+    width: calc(100% - 40px);
+  }
+  .modal .modal_content, .modal_three .modal_content {
+    width: 100%;
+  }
+  .modal .modal_content .modal_form, .modal_three .modal_content .modal_form {
+    width: 100%;
+  }
+  .modal .modal_content .modal_form .modal_btn, .modal_three .modal_content .modal_form .modal_btn {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
